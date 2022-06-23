@@ -26,9 +26,10 @@ const VoteButtons = (props: VoteButtonsProps) => {
   );
 
   return (
-    <div className="w-52 sm:w-full space-y-4 sm:space-y-0 sm:space-x-6 px-3 flex flex-col items-center sm:flex-row">
-      <Button text={question.choices[0]} value={1} />
-      <Button text={question.choices[1]} value={2} />
+    <div className="w-52 space-y-4 px-3 flex flex-col items-center">
+      {question.choices.map((choice, index) => {
+        return <Button text={choice} value={index} />;
+      })}
     </div>
   );
 };

@@ -34,7 +34,7 @@ const StartMenu = (props: StartMenuProps) => {
           <input
             autoFocus
             type="text"
-            className="shadow-sm shadow-black px-2 py-2 w-full outline-none text-secondary font-bold border-2 border-primary rounded"
+            className="shadow-sm shadow-black px-2 py-2 w-full outline-none text-primary font-bold border-2 border-primary rounded"
             value={name}
             onChange={(event) => {
               if (event.currentTarget.value.length <= 16) {
@@ -55,7 +55,7 @@ const StartMenu = (props: StartMenuProps) => {
               autoFocus
               type="number"
               min={1}
-              className="shadow-sm shadow-black px-2 py-2 mb-2 w-24 outline-none text-secondary font-bold border-2 border-primary rounded"
+              className="shadow-sm shadow-black px-2 py-2 mb-2 w-24 outline-none text-primary font-bold border-2 border-primary rounded"
               value={nQuestions}
               onChange={(event) => {
                 setNQuestions(event.currentTarget.value);
@@ -103,7 +103,7 @@ const StartMenu = (props: StartMenuProps) => {
         </button>
         <input
           type="text"
-          className="px-4 py-2 w-full outline-none text-secondary font-bold"
+          className="px-4 py-2 w-full outline-none text-primary font-bold"
           value={roomId}
           onChange={(event) => {
             if (event.currentTarget.value.length <= 4) {

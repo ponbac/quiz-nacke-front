@@ -1,21 +1,24 @@
 type Room = {
-    id: string;
-    players: Player[];
-    questions: Question[];
-    current_question: number;
-    scene: number;
-}
+  id: string;
+  players: Player[];
+  questions: Question[];
+  current_question: number;
+  scene: number;
+};
 
 type Player = {
-    name: string;
-    score: number;
-}
+  name: string;
+  score: number;
+};
 
 type Question = {
-    type: string;
-    description: string;
-    choices: string[];
-    reward: number;
-    group_one: Player[];
-    group_two: Player[];
-}
+  type: string;
+  category: string;
+  description: string;
+  choices: string[];
+  correct_choice: number;
+  reward: number;
+  answers: string[];
+  correct_players: string[];
+  incorrect_players: string[];
+};

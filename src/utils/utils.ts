@@ -41,10 +41,10 @@ export const hasAnswered = (
     return false;
   }
 
-  const allAnswers = question?.group_one.concat(question?.group_two);
+  const allAnswers = question?.answers;
 
   if (allAnswers) {
-    return allAnswers.some((p) => p.name === playerName);
+    return allAnswers.some((name) => name === playerName);
   }
   return false;
 };
