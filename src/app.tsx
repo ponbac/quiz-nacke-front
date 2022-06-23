@@ -55,7 +55,7 @@ const App: FC<{}> = () => {
         {!inGame && (
           <>
             <p
-              className="mb-2 font-novaMono text-primary text-8xl lg:text-8xl font-bold text-center px-2"
+              className="mb-2 font-novaMono text-primary text-6xl lg:text-8xl font-bold text-center px-2 w-full"
               style={{ textShadow: "2px 2px black" }}
             >
               [QUIZNACKE]
