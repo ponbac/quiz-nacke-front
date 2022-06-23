@@ -29,13 +29,13 @@ const ResultsTable = (props: ResultsTableProps) => {
                 className="text-lg text-gray-400 font-bold italic"
                 key={player.name}
               >
-                {player.name} - {player.score} klunkar
+                {player.name} - {player.score}p
               </p>
             );
           }
           return (
             <p className="text-lg font-bold" key={player.name}>
-              {player.name} - {player.score} klunkar
+              {player.name} - {player.score}p
             </p>
           );
         })}

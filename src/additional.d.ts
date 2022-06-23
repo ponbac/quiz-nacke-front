@@ -16,7 +16,7 @@ type Question = {
   category: string;
   description: string;
   choices: string[];
-  correct_choice: number;
+  correct_choice: string;
   reward: number;
   answers: string[];
   correct_players: string[];
