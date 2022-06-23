@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { startGame } from "../features/auth/gameSlice";
+import { startGame } from "../features/game/gameSlice";
 import { useAppDispatch } from "../features/store";
 import { StartAction } from "../views/game";
 

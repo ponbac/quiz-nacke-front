@@ -1,4 +1,4 @@
-import { exitGame, newGameState } from "../../features/auth/gameSlice";
+import { exitGame, newGameState } from "../../features/game/gameSlice";
 import { useAppDispatch } from "../../features/store";
 import ResultsTable from "../ResultsTable";
 

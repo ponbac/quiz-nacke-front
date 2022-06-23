@@ -12,7 +12,7 @@ import {
   selectName,
   selectRoom,
   setName,
-} from "../features/auth/gameSlice";
+} from "../features/game/gameSlice";
 import { useAppDispatch, useAppSelector } from "../features/store";
 import { SERVER_URL } from "../utils/constants";
 

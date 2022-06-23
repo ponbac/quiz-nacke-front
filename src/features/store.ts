@@ -5,7 +5,7 @@ import {
 } from "@reduxjs/toolkit";
 import { TypedUseSelectorHook, useDispatch, useSelector } from "react-redux";
 import { Action } from "redux";
-import { gameSlice } from "./auth/gameSlice";
+import { gameSlice } from "./game/gameSlice";
 
 const makeStore = () =>
   configureStore({

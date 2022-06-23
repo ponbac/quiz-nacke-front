@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { SendMessage } from "react-use-websocket";
-import { selectName } from "../../features/auth/gameSlice";
+import { selectName } from "../../features/game/gameSlice";
 import { useAppSelector } from "../../features/store";
 import { hasAnswered } from "../../utils/utils";
 import ResultsTable from "../ResultsTable";

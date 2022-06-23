@@ -1,4 +1,4 @@
-import { selectCurrentQuestion, selectName } from "../features/auth/gameSlice";
+import { selectCurrentQuestion, selectName } from "../features/game/gameSlice";
 import { useAppSelector } from "../features/store";
 import { hasAnswered } from "../utils/utils";
 

@@ -2,7 +2,7 @@ import { FC, useEffect, useState } from "react";
 import { Helmet } from "react-helmet";
 import FadeInDiv from "./components/FadeInDiv";
 import StartMenu from "./components/StartMenu";
-import { exitGame, selectInGame } from "./features/auth/gameSlice";
+import { exitGame, selectInGame } from "./features/game/gameSlice";
 import { useAppDispatch, useAppSelector } from "./features/store";
 import { SERVER_URL } from "./utils/constants";
 import Game, { StartAction } from "./views/game";
