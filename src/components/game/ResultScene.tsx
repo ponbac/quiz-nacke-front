@@ -59,7 +59,7 @@ const ResultScene = (props: ResultSceneProps) => {
           {question.correct_players.length > 0 && (
             <>
               <p
-                className="font-bold text-3xl text-center mt-4"
+                className="font-bold text-3xl text-center mt-4 px-2"
                 style={{ textShadow: "1px 1px black" }}
               >
                 Rätt svar, dela ut {question.reward * 2} klunkar:
@@ -80,10 +80,11 @@ const ResultScene = (props: ResultSceneProps) => {
           {question.incorrect_players.length > 0 && (
             <>
               <p
-                className="font-bold text-3xl text-center mt-4"
+                className="font-bold text-3xl text-center mt-4 px-2"
                 style={{ textShadow: "1px 1px black" }}
               >
-                Felaktigt svar, straff {question.reward / 2} klunk(ar):
+                Felaktigt svar, straff{" "}
+                {question.reward / 2 >= 1 ? question.reward / 2 : 1} klunk(ar):
               </p>
               {question.incorrect_players.map((playerName) => {
                 return (
