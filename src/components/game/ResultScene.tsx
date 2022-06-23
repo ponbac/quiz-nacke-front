@@ -62,7 +62,7 @@ const ResultScene = (props: ResultSceneProps) => {
                 className="font-bold text-3xl text-center mt-4"
                 style={{ textShadow: "1px 1px black" }}
               >
-                Rätt svar, dela ut {question.reward * 3} klunkar:
+                Rätt svar, dela ut {question.reward * 2} klunkar:
               </p>
               {question.correct_players.map((playerName) => {
                 return (
